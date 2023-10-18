@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    box-sizing:border-box;
+}
+
+.nav {
+    grid-area: a;
+    height: 5vh;
+    font-size: large;
+    margin: auto;
+    min-width: -webkit-fill-available;
+    text-align: center;
+    color: black;
+    background-color: rgb(127, 172, 255);
+    padding-top: 15px;
+}
+
+.sidebar {
+    grid-area: b;
+    height: auto;
+    background-color: rgb(207, 136, 30);
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.main {
+    grid-area: c;
+    height: 90vh;
+    overflow-y: scroll;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    height: fit-content;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img {
+    width: 100%;
+}
+
+.footer {
+    grid-area: d;
+    text-align: center;
+    height: 5vh;
+    background-color: white;
+    padding-top: 15px;
+}
+
+.container1 {
+    display: grid;
+    max-width: 100vw;
+    max-height: auto;
+    grid-template-areas:
+    "a a a a"
+    "b c c c" 
+    "b c c c"
+    "d d d d" 
+}
+
+h4 {
+    
+    margin-top: 2vh;
+    font-size: 23px;
+    align-items: center;
+}
+
+
+.lista {
+    letter-spacing: 2px;
+    font-size: 21px;
+    margin-left: 1vw;
+}
+
+.cajacomprar {
+    border: 1px solid black;
+    width: fit-content;
+    min-width: -webkit-fill-available;
+    background-color: aqua;
+    opacity: 0.5;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.containernav {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh;
+    background-color: rgb(66, 154, 206);
+}
+
+.nav {
+    font-size: large;
+    margin: auto;
+    color: white;
+}
+
+
+.containersidemain {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 90vh; 
+    
+}
+
+.sidebar {
+    background-color: brown;
+      
+}
+
+h4 {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    font-size: 23px;
+}
+.lista {
+    letter-spacing: 2px;
+    font-size: 21px;
+    margin-left: 2vw;
+}
+
+.main {
+    background-color: blueviolet;
+}
+.containerfooter {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5vh;
+    background-color: antiquewhite;
+}
+
+.footer {
+    background-color: bisque;
+}
+
+/*
+<div class="containernav">
+<!--NAVBAR-->
+<div class="nav">Mi Ecommerce</div>
+</div>
+<div class="containersidemain">
+<!--SIDEBAR-->
+<div class="sidebar">
+    <h4>Categorias</h4>
+    <div class="lista">
+        <br>
+        <ul>
+            <li>Perfumes (13)</li>
+            <li>Ropa (21)</li>
+            <li>Accesorios (41)</li>
+            <li>Zapatos (10)</li>
+        </ul>
+    </div>
+</div>
+<!--MAIN-->
+<div class="main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, repudiandae!</div>
+</div>
+<div class="containerfooter">
+<!--FOOTER-->
+<div class="footer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, repudiandae!</div>
+</div>
+
+*/
